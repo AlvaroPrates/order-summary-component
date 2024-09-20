@@ -1,0 +1,208 @@
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    position: relative;
+    z-index: -3;
+}
+
+/* Mobile */
+
+.main-content {
+    background-color: #E0E8FF;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: -2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-pattern {
+    align-self: flex-start;
+    position: absolute;
+    z-index: -1;
+}
+
+.bg-pattern-mobile {
+    width: 63.927rem;
+    display: block;
+}
+
+.bg-pattern-desktop {
+    display: none;
+}
+
+/* Order Container */
+
+.order-container {
+    background-color: #FFF;
+    max-width: 45rem;
+    min-width: 29.7rem;
+    margin: 0 2.4rem;
+    border-radius: 2rem;
+    box-shadow: 0 4rem 4rem -2rem rgba(13, 48, 189, 0.1518);
+}
+
+.illustration-hero {
+    display: block;
+    width: 100%;
+    border-radius: 2rem 2rem 0 0;
+}
+
+/* Order Info */
+
+.order-info {
+    z-index: 1;
+    padding: 3.2rem 2.4rem;
+}
+
+.order-summary {
+    font-size: 2.2rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 1.6rem;
+}
+
+.order-description {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 2.5rem;
+    color: #717FA6;
+    margin-bottom: 2.4rem;
+}
+
+.order-plan {
+    background-color: #F7F9FF;
+    padding: 1.6rem;
+    border-radius: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.4rem;
+}
+
+.order-icon-plan {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 2rem;
+}
+
+.plan-category,
+.plan-price {
+    font-size: 1.4rem;
+}
+
+.plan-category {
+    font-weight: 900;
+    color: #1F2E55;
+    margin-bottom: 0.3rem;
+}
+
+.plan-price {
+    font-weight: 500;
+    color: #717FA6;
+}
+
+.plan-change {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #382AE1;
+}
+
+.order-proceed,
+.order-cancel {
+    display: block;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.order-proceed {
+    width: 100%;
+    border-radius: 1.1rem;
+    background-color: #382AE1;
+    color: #FFF;
+    padding: 1.5rem;
+    box-shadow: 0 2rem 2rem rgba(56, 42, 225, 0.1903);
+    margin-bottom: 2.4rem;
+}
+
+.order-cancel {
+    background-color: unset;
+    color: #717FA6;
+    margin: 0 auto;
+}
+
+/* Desktop */
+
+@media (min-width: 440px) {
+    .bg-pattern-desktop {
+        display: block;
+    }
+
+    .bg-pattern-mobile {
+        display: none;
+    }
+
+    .order-info {
+        padding: 4.5rem 4.8rem 4.8rem 4.8rem;
+    }
+
+    .order-summary {
+        font-size: 2.8rem;
+        margin-bottom: 1.7rem;
+    }
+
+    .order-description {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+
+    .order-plan {
+        padding: 2.5rem 2.4rem;
+        margin-bottom: 3.2rem;
+    }
+
+    .plan-category,
+    .plan-price {
+        font-size: 1.6rem;
+    }
+
+    .plan-change {
+        font-size: 1.4rem;
+    }
+
+    .order-proceed,
+    .order-cancel {
+        cursor: pointer;
+    }
+
+    .order-proceed {
+        margin-bottom: 3.2rem;
+    }
+
+    .order-proceed:hover {
+        background-color: #766CF1;
+    }
+}
+
+@media (min-width: 1420px) {
+    .bg-pattern-desktop {
+        width: 100%;
+    }
+}
